@@ -19,5 +19,10 @@
             <li><a href="#">About Me</a></li> 
             <li><a href="#">Contact</a></li>       
         </ul>
+        <div>
+            <form action="includes/login.inc.php" method="POST">
+                <input type="text">
+            </form>
+        </div>
     </nav>
 </header>

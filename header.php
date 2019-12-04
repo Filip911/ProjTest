@@ -18,7 +18,13 @@
             <li><a href="#">Portfolio</a></li> 
             <li><a href="#">About Me</a></li> 
             <li><a href="#">Contact</a></li> 
-        </ul>
-       
+        </ul>   
+        <div class="header-login ">
+            <form class="" action="includes/login.inc.php" method="POST">
+            <input type="text" name="id" placeholder="Username">
+            <input type="password" name="pwd" placeholder="Password">
+        </div>     
     </nav>
+        
 </header>
+

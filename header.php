@@ -13,8 +13,7 @@
 
 
 <header>             
-     <div class="navbar navbar-default navbar-fixed-top" id="navbar">
-            <nav>
+ <nav class="navbar navbar-expand-md">
                 <a class="navbar-brand" href=""><img src="img/gear.png"></a>
                 <ul class="nav navbar-nav">
                     <li>
@@ -32,25 +31,20 @@
                   <li>                                 
                       <form class="navbar-form">                                                            
                         <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus>                                     
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>   
-                      </form>
-                  </li>
-                  <li>              
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>                               
                         <button type="submit" class="btn btn-default" name="login-submit">Login</button>    
+                      </form>
                    </li>   
                    <li>    
                         <a href="signup.php">SignUp</a>
                    </li>
                    <li>              
                         <form action="includes/logout.inc.php" method="POST" class="navbar-form form-inline">
-                        <button type="submit" class="btn btn-default d-flex .flex-column" name="logout-submit">Logout</button>   
-                        </form> 
-       
-                 </li>      
-                       
-       
-             </div>
-             </nav>
+                        <button type="submit" class="btn btn-default" name="logout-submit">Logout</button>   
+                        </form>   
+                   </li>                                  
+          
+                 </nav>
             </header> 
           
        

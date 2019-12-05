@@ -10,10 +10,11 @@
 </head>
 <body>
     
-<header>
-<div class="sticky-header-navbar-container">
-        <div class="well">
-            <div class="navbar navbar-default navbar-fixed-top" id="navbar">
+
+
+<header>             
+     <div class="navbar navbar-default navbar-fixed-top" id="navbar">
+            <nav>
                 <a class="navbar-brand" href=""><img src="img/gear.png"></a>
                 <ul class="nav navbar-nav">
                     <li>
@@ -24,30 +25,32 @@
                     </li>
                     <li>
                         <a href="#">Contact</a>
-                    </li>
-                    
+                    </li>                    
                 </ul>
-                <ul class="nav navbar-nav navbar-right line-inline">
-                    
-                    <li>
-
-                        <!-- Changes I made start here -->
-
-                        <form class="form-signin navbar-form">
-                            
-                            <label for="inputEmail" class="sr-only">Email address</label>
-                            <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus>
-                            <label for="inputPassword" class="sr-only">Password</label>
-                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                                <span><button type="submit" name="login-submit">Login</button></span>
-                             <span><a href="signup.php" class="">SignUp</a><span>
-                            
-                          <form action="includes/logout.inc.php" method="POST" class="">
-                                <button type="submit" class="btn btn-default" name="logout-submit">Logout</button>
-                          </form> 
-                        </form>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+           
+             <ul class="nav navbar-nav navbar-right">
+                  <li>                                 
+                      <form class="navbar-form">                                                            
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus>                                     
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>   
+                      </form>
+                  </li>
+                  <li>              
+                        <button type="submit" class="btn btn-default" name="login-submit">Login</button>    
+                   </li>   
+                   <li>    
+                        <a href="signup.php">SignUp</a>
+                   </li>
+                   <li>              
+                        <form action="includes/logout.inc.php" method="POST" class="navbar-form form-inline">
+                        <button type="submit" class="btn btn-default d-flex .flex-column" name="logout-submit">Logout</button>   
+                        </form> 
+       
+                 </li>      
+                       
+       
+             </div>
+             </nav>
+            </header> 
+          
+       

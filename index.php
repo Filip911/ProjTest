@@ -3,8 +3,8 @@
 ?>
 
     <main>
-        <div class="wrapper-main">
-            <section>
+        <div class="main">
+            <section> 
                 <p class="login-status">You are logged out!</p>
                 <p class="login-status">You are logged in!</p>
             </section>

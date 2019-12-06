@@ -8,31 +8,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://bootswatch.com/3/spacelab/bootstrap.min.css">
 </head>
-<body>
-    
-
-
+<body>   
 <header>             
- <nav class="navbar navbar-expand-md">
-                <a class="navbar-brand" href=""><img src="img/gear.png"></a>
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
+    <nav class="navbar navbar-expand-md">
+         <a class="navbar-brand" href=""><img src="img/gear.png"></a>
+            <ul class="nav navbar-nav">
+                 <li>
+                       <a href="#">Home</a>
+                  </li>
+                  <li>
+                         <a href="#">About</a>
+                  </li>
+                  <li>
                         <a href="#">Contact</a>
-                    </li>                    
-                </ul>
-           
+                 </li>                    
+            </ul>         
              <ul class="nav navbar-nav navbar-right">
                   <li>                                 
                       <form class="navbar-form">                                                            
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus>                                     
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>                               
-                        <button type="submit" class="btn btn-default" name="login-submit">Login</button>    
+                          <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus>                                     
+                          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>                               
+                          <button type="submit" class="btn btn-default" name="login-submit">Login</button>    
                       </form>
                    </li>   
                    <li>    
@@ -40,11 +36,11 @@
                    </li>
                    <li>              
                         <form action="includes/logout.inc.php" method="POST" class="navbar-form form-inline">
-                        <button type="submit" class="btn btn-default" name="logout-submit">Logout</button>   
+                          <button type="submit" class="btn btn-default" name="logout-submit">Logout</button>   
                         </form>   
-                   </li>                                  
-          
-                 </nav>
-            </header> 
+                   </li> 
+             </ul>                                                 
+     </nav>
+ </header> 
           
        

@@ -5,8 +5,15 @@
     <main>
         <div class="main">
             <section> 
-                <p class="login-status">You are logged out!</p>
-                <p class="login-status">You are logged in!</p>
+            <?php 
+                if (isset($_SESSION['idJuzer'])) {
+                    echo '<p class="login-status">You are logged in!</p>';
+                }
+                else {
+                    echo '<p class="login-status">You are logged out!</p>';
+                }
+            ?>
+               
             </section>
         </div>
     </main>

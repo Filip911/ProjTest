@@ -9,6 +9,10 @@
     <div class="col-sm-4">
         <section>
         <h1>Signup</h1>
+        <?php 
+
+
+        ?>
             <form action="includes/signup.inc.php" method="post">
                 <input class="form-control" id="formy" type="text" name="uid" placeholder="Username">
                 <input class="form-control" id="formy" type="text" name="mail" placeholder="E-mail">

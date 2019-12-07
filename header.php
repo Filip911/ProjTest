@@ -1,3 +1,6 @@
+<?php 
+     session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +27,8 @@
                  </li>                    
             </ul>         
              <ul class="nav navbar-nav navbar-right">
-                  <li>                                 
+                  <li>    
+                 
                       <form class="navbar-form">                                                            
                           <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus>                                     
                           <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>                               

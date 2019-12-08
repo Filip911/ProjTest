@@ -7,10 +7,10 @@
             <section class="section-default"> 
             <?php 
                 if (isset($_SESSION['userId'])) {
-                    echo '<p class="login-status">You are logged in!</p>';
+                    echo '<p style="color: yellow; text-align: center;" class="login-status">You are logged in!</p>';
                 }
                 else {
-                    echo '<p class="login-status">You are logged out!</p>';
+                    echo '<p style="color: red; text-align: center;" class="login-status">You are logged out!</p>';
                 }
             ?>
                

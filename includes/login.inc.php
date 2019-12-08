@@ -26,7 +26,7 @@ if (isset($_POST['login-submit'])) {
             if ($row = $mysqli_fetch_assoc($result)) {
                 $pwdCheck = password_verify($pwd, $row['pwdUsers']);
                 if ($pwdCheck == false) {
-                    header("location: ../index.php?error=wrongpassword");
+                    header("location: ../index.php?error=wrongpwd");
                     exit();
                 }
                 elseif ($pwdCheck == true) {
@@ -38,7 +38,7 @@ if (isset($_POST['login-submit'])) {
                     exit();
                 }
                 else {
-                    header("location: ../index.php?error=wrongpassword");
+                    header("location: ../index.php?error=wrongpwd");
                     exit();
                 }
             }

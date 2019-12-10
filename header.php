@@ -43,6 +43,7 @@
             <button type="submit" class="btn btn-default" name="logout-submit">Logout</button>   
         </form> 
         </div> 
+        <p>Not a skipped day,working HARD another project!</p>
   </div>
 </nav>
 </body>

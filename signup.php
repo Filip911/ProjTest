@@ -1,32 +1,30 @@
 <?php 
     require "header.php";
 ?>
+<form action="includes/signup.inc.php" method="post">
+  <div class="container-sign">
+    <h1>Sign Up</h1>
+    <php 
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4">
-    </div>
-    <div class="col-sm-4">
-        <section>
-        <h1>Signup</h1>
-        <?php 
+    ?>
+    <p>Please fill in this form to create an account.</p>
+      
+    <input type="text" placeholder="Username" name="uid" required>
+      <br>
 
-
-        ?>
-        <form action="includes/signup.inc.php" method="post">
-            <input class="form-control" id="formy" type="text" name="uid" placeholder="Username">
-            <input class="form-control" id="formy" type="text" name="mail" placeholder="E-mail">
-            <input class="form-control" id="formy" type="password" name="pwd" placeholder="Password">
-            <input class="form-control" id="formy" type="password" name="pwd-repeat" placeholder="Repeat password">
-            <button class="btn btn-default" type="submit" name="signup-submit">Signup</button>
-        </form>
-        </section>
-    </div>
-    <div class="col-sm-4">
-    </div>
+    <input type="text" placeholder="Enter Email" name="mail" required>
+      <br>
+  
+    <input type="password" placeholder="Enter Password" name="pwd" required>
+      <br>
+    
+    <input type="password" placeholder="Repeat Password" name="pwd-repeat" required>
+      <br>
+     
+      <button type="submit" name="signup-submit">Signup</button>
   </div>
-</div>
-
+</form>
+</div>  
  <?php 
     require "footer.php";
  ?> 

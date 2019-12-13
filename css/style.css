@@ -60,7 +60,7 @@ button {
 }
 
 button:hover {
-  background-color: green;
+  background-color: #2196F3;
 }
 
 @media screen and (max-width: 600px) {
@@ -84,3 +84,4 @@ button:hover {
 .container-sign {
   text-align: center;
 }
+

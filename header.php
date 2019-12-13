@@ -16,16 +16,23 @@
   <a class="active" href="#home">Home</a>
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
-  <div class="login-container" display="inline">
-      <form action="includes/login.inc.php" style="display: inline;">
+  <div class="login-container">
+  <?php 
+  if (isset($_SESSION['userId'])) {
+     
+  } else {
+      
+  }
+  ?>
+    <form action="includes/login.inc.php" method="post" style="display: inline;">
       <input type="text" placeholder="Email" name="mailuid" required> 
       <input type="password" placeholder="Password" name="pwd" required>
       <button type="submit" name="login-submit">Login</button>
     </form>
       <a href="signup.php">Singup</a>
-      <form action="includes/logout.inc.php" method="POST" style="display:inline;">
+    <form action="includes/logout.inc.php" method="post" style="display:inline;">
       <button type="submit" class="btn" name="logout-submit">Logout</button>   
-      </form>
+    </form>
   </div>
 </div>
 

@@ -19,20 +19,20 @@
   <div class="login-container">
   <?php 
   if (isset($_SESSION['userId'])) {
-     
+      echo '<form action="includes/logout.inc.php" method="post" style="display:inline;">
+      <button type="submit" class="btn" name="logout-submit">Logout</button>   
+      </form>';
   } else {
-      
+    echo '<form action="includes/login.inc.php" method="post" style="display: inline;">
+    <input type="text" placeholder="Email" name="mailuid" required> 
+    <input type="password" placeholder="Password" name="pwd" required>
+    <button type="submit" name="login-submit">Login</button>
+    </form>
+    <a href="signup.php">Singup</a>';
   }
   ?>
-    <form action="includes/login.inc.php" method="post" style="display: inline;">
-      <input type="text" placeholder="Email" name="mailuid" required> 
-      <input type="password" placeholder="Password" name="pwd" required>
-      <button type="submit" name="login-submit">Login</button>
-    </form>
-      <a href="signup.php">Singup</a>
-    <form action="includes/logout.inc.php" method="post" style="display:inline;">
-      <button type="submit" class="btn" name="logout-submit">Logout</button>   
-    </form>
+    
+    
   </div>
 </div>
 
